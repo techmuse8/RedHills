@@ -1,11 +1,11 @@
-<img alt="banner redhills" src="https://github.com/user-attachments/assets/ff33447c-975d-4971-9c8f-ff3e29c49fc1" />
+<img alt="banner redhills" src="https://github.com/user-attachments/assets/698372b7-7dc7-47f2-a675-49cf7ea3c0f0" />
 <div align="center">
-  <img alt="wiiu" height="56" src="https://github.com/user-attachments/assets/fc1f38b1-46a1-44ee-acfb-ac436d900dc6">
+  <img alt="wiiu" height="56" src="https://github.com/user-attachments/assets/c1576bbd-fcc0-4ca9-982f-a6dfe5a8545d">
   <a href="https://go.nsmbu.net/discord">
-    <img alt="discord" height="56" src="https://github.com/user-attachments/assets/495433d7-1ddc-47f1-8c8e-f4ef137754c2">
+    <img alt="discord" height="56" src="https://github.com/user-attachments/assets/785798a3-2702-42be-b960-584b1df86075">
   </a>
   <a href="https://zenith.nsmbu.net/wiki/Red_Hills">
-    <img alt="docs" height="56" src="https://github.com/user-attachments/assets/dc583842-a4d3-4635-b036-33d5f9bfc4d5">
+    <img alt="docs" height="56" src="https://github.com/user-attachments/assets/109c6469-e10d-4407-940d-554203452499">
   </a>
 </div>
 
@@ -16,7 +16,7 @@
 - Full [ABI parity](https://zenith.nsmbu.net/wiki/Green_Hills_C%2B%2B_ABI) with GHS such that binaries built with either compiler may call upon each other with no behaviour concerns.
 ## Non-goals
 - It is not a goal to have full codegen parity with GHS, for uses such as matching decompilations.
-- It is not a goal to support language features which are impossible to use in conjunction such as C++ exceptions or run-time type information.
+- It is not a goal to support language features which are impossible to use in conjunction such as C++ exceptions.
 - It is not a goal to produce a drop-in replacement for GHS, thus the language frontend and driver invocation interface will not recieve parity.
 - It is not a goal to maintain any form of support for general non-GHS targets, please use upstream Clang or alternatives for such use cases.
 
