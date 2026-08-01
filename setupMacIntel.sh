@@ -5,5 +5,5 @@ cmake -S llvm -B build -G Ninja -DLLVM_ENABLE_PROJECTS=clang -DCMAKE_BUILD_TYPE=
 	-DCLANG_ENABLE_STATIC_ANALYZER=OFF -DLLVM_ENABLE_ZSTD=OFF -DLLVM_ENABLE_ZLIB=OFF -DLLVM_ENABLE_LIBXML2=OFF -DCLANG_ENABLE_OBJC_REWRITER=OFF \
 	-DCMAKE_C_FLAGS="-ffile-prefix-map=$(pwd)=/build -ffile-prefix-map=$HOME=/root" \
 	-DCMAKE_CXX_FLAGS="-ffile-prefix-map=$(pwd)=/build -ffile-prefix-map=$HOME=/root" \
-	-DCMAKE_EXE_LINKER_FLAGS="-Wl,-mllvm,-thinlto-assume-merged -Wl,-S -Wl,-x -Wl,-dead_strip -Wl," \
+	-DCMAKE_EXE_LINKER_FLAGS="-Wl,-mllvm,-thinlto-assume-merged -Wl,-S -Wl,-x -Wl,-dead_strip -Wl, -reproducible" \
 	-DCMAKE_OSX_ARCHITECTURES=x86_64 -DLLVM_ENABLE_TERMINFO=OFF
